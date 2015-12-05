@@ -12,7 +12,7 @@ module.exports = {
    // Kims mongolab instance.
    //db: 'mongodb://nodegoat:02B1vXLoAqoGPY7m9ci2LBwMC3rOKr@ds053944.mongolab.com:53944/nodegoat',
 
-
+   //db: 'mongodb://<dbuser>:<dbpassword>@<databasename>',
    // If you want to debug regression tests, you will need the following which is also in the test config:
    zapHostName: "192.168.56.20",
    zapPort: "8080"
