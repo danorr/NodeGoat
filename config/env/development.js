@@ -5,17 +5,12 @@ module.exports = {
    // grunt db-reset:development
    // That will create the local nodegoat data-store, or restore it to a clean state if it already exists.
 
-   db: "mongodb://localhost:27017/nodegoat",
-
-   // If you want to use a MongoLab instance, just sign up for it, create a data-store, in this example we call it nodegoat.
-   // and again just run the grunt db-reset:development command
-
-   // Kims mongolab instance.
-   //db: 'mongodb://nodegoat:02B1vXLoAqoGPY7m9ci2LBwMC3rOKr@ds053944.mongolab.com:53944/nodegoat',
+   // For container
+   db: "mongodb://mongo:27017/nodegoat",
 
    //db: 'mongodb://<dbuser>:<dbpassword>@<databasename>',
    // If you want to debug regression tests, you will need the following which is also in the test config:
-   zapHostName: "192.168.56.20",
+   zapHostName: "172.17.0.2",
    zapPort: "8080",
    // Required from Zap 2.4.1. This key is set in Zap Options -> API _Api Key.
    zapApiKey: "v9dn0balpqas1pcc281tn5ood1",

@@ -3,12 +3,18 @@ version: "2.0"
 services:
   web:
     build: .
-    command: npm start
+    # The following line is not working.
+    command: bash -c "node artifacts/db-reset.js && npm start && ./node_modules/.bin/mocha test/security/*test.js"
     ports:
       - "4000:4000"
     links:
       - mongo
+      #- zap
   mongo:
     image: mongo:latest
     expose:
       - "27017"
+  #zap:
+  #  image: owasp/zap2docker-stable
+  #  expose:
+  #    - "8080"
