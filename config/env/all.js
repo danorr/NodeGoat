@@ -8,5 +8,5 @@ module.exports = {
     // hostName as seen by the OWASP Zap container.
     // This may be different, but once you have the Zap container running,
     // do an ifconfig on your physical host and you'll see what docker has assigned to your physical host.
-    hostName: "172.17.0.1"
+    hostName: "172.17.0.1"    
 };

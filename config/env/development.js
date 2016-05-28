@@ -5,9 +5,7 @@ module.exports = {
    // grunt db-reset:development
    // That will create the local nodegoat data-store, or restore it to a clean state if it already exists.
 
-   //db: "mongodb://localhost:27017/nodegoat",
    db: "mongodb://localhost:27017/nodegoat",
-
 
    // If you want to use a MongoLab instance, just sign up for it, create a data-store, in this example we call it nodegoat.
    // and again just run the grunt db-reset:development command
@@ -19,6 +17,9 @@ module.exports = {
    // docker ps # will provide the running containers details. Use the container Id in the followng command
    // docker inspect <container Id> | grep IPAddress # Use the outputted IP.
    zapHostName: "172.17.0.2",
+   // Otherwise if running Zap Api in the virtualbox VM, use something like the following:
+   // zapHostName: "192.168.56.20",
+
    zapPort: "8080",
    // Required from Zap 2.4.1. This key is set in Zap Options -> API _Api Key.
    zapApiKey: "v9dn0balpqas1pcc281tn5ood1",
