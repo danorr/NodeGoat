@@ -21,3 +21,8 @@ report*.html
 
 *.sublime*
 server-*
+
+server-withoutXSS.js
+server-withXSS.js
+NodeGoat.sublime-project
+NodeGoat.sublime-workspace
