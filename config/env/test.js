@@ -4,7 +4,7 @@ module.exports = {
    // To find this out:
    // docker ps # will provide the running containers details. Use the container Id in the followng command
    // docker inspect <container Id> | grep IPAddress # Use the outputted IP.
-
+    
    zapHostName: "172.17.0.2",
    // Otherwise if running Zap Api in the virtualbox VM, use something like the following:
    // zapHostName: "192.168.56.20",
