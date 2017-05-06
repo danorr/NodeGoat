@@ -13,7 +13,7 @@ function AllocationsHandler(db) {
         */
         var userId = req.params.userId;
 
-        allocationsDAO.getByUserId(userId, function(err, docs) {
+        allocationsDAO.getByUserIdAndThreshold(userId, req.query.threshold, function(err, docs) {
             if (err) return next(err);
 
             docs.userId = userId; //set for nav menu items
